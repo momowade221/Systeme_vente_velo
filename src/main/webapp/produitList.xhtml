@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+
+
+<h:head>
+    <title>Liste des Produits</title>
+</h:head>
+
+
+<h:body>
+    <ui:insert name="header">
+        <ui:include src="header.xhtml"/>
+    </ui:insert>
+    <h:form id="formId">
+        <h:outputLabel value="Liste des Produits"/>
+        <h:panelGrid border="2">
+            <p:dataTable id="singleDT" var="produit" value="#{listeProduitsMbean.produits}" selectionMode="single"
+                         selection="#{listeProduitsMbean.selected_produit}" rowKey="#{produit.id}">
+                <p:ajax event="rowSelect" update="formId:detailProduit"></p:ajax>
+                <p:column headerText="ID">
+                    <h:outputText value="#{produit.id}"/>
+                </p:column>
+                <p:column headerText="Année du Modèle">
+                    <h:outputText value="#{produit.anneeModel}"/>
+                </p:column>
+                <p:column headerText="Nom">
+                    <h:outputText value="#{produit.nom}"/>
+                </p:column>
+                <p:column headerText="Prix de Départ">
+                    <h:outputText value="#{produit.prixDepart}"/>
+                </p:column>
+                <p:column headerText="Catégorie ID">
+                    <h:outputText value="#{produit.categorieId}"/>
+                </p:column>
+                <p:column headerText="Marque ID">
+                    <h:outputText value="#{produit.marqueId}"/>
+                </p:column>
+            </p:dataTable>
+            <p:panelGrid id="detailProduit" columns="1">
+                <p:panel rendered="#{listeProduitsMbean.selected_produit != null}">
+                    <p:outputLabel value="Détails du Produit"/>
+                    <p:outputLabel value="ID: #{listeProduitsMbean.selected_produit.id}"/>
+                    <p:outputLabel value="Année du Modèle: #{listeProduitsMbean.selected_produit.anneeModel}"/>
+                    <p:outputLabel value="Nom: #{listeProduitsMbean.selected_produit.nom}"/>
+                    <p:outputLabel value="Prix de Départ: #{listeProduitsMbean.selected_produit.prixDepart}"/>
+                    <p:outputLabel value="Catégorie ID: #{listeProduitsMbean.selected_produit.categorieId}"/>
+                    <p:outputLabel value="Marque ID: #{listeProduitsMbean.selected_produit.marqueId}"/>
+                </p:panel>
+            </p:panelGrid>
+        </h:panelGrid>
+    </h:form>
+</h:body>
+</html>

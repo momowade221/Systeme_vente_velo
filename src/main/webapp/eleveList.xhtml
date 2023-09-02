@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+    <title>Title</title>
+</h:head>
+<h:body>
+    <h:form id="formId">
+    <h:outputLabel value="Listes élèves to do"/>
+    <h:panelGrid border="2">
+    <p:dataTable id="singleDT" var="e" value="#{listeElevesMbean.eleves}" selectionMode="single"
+                 selection="#{listeElevesMbean.selected_eleve}" rowKey="#{e.numero}">
+        <p:ajax event="rowSelect" update="formId:detailEleve"></p:ajax>
+        <p:column headerText="Prenom">
+            <h:outputText value="#{e.prenom}"/>
+        </p:column>
+        <p:column headerText="Nom">
+            <h:outputText value="#{e.nom}"/>
+        </p:column>
+        <p:column headerText="Poids">
+            <h:outputText value="#{e.poids}"/>
+        </p:column>
+    </p:dataTable>
+        <p:panelGrid id="detailEleve" columns="1">
+        <p:panel rendered="#{listeElevesMbean.selected_eleve != null}">
+            <p:outputLabel value="#{listeElevesMbean.selected_eleve.prenom}"></p:outputLabel>
+        </p:panel>
+       </p:panelGrid>
+    </h:panelGrid>
+    </h:form>
+</h:body>
+</html>

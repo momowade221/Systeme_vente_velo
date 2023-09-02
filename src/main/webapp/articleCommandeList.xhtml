@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+
+
+<h:head>
+    <title>Liste des articles de commande</title>
+</h:head>
+
+
+<h:body>
+    <ui:insert name="header">
+        <ui:include src="header.xhtml"/>
+    </ui:insert>
+    <h:form id="formId">
+        <h:outputLabel value="Liste des Articles de Commande"/>
+        <h:panelGrid border="2">
+            <p:dataTable id="singleDT" var="article" value="#{listeArticlesCommandeMbean.articles}" selectionMode="single"
+                         selection="#{listeArticlesCommandeMbean.selected_article}" rowKey="#{article.numeroCommande}">
+                <p:ajax event="rowSelect" update="formId:detailArticle"></p:ajax>
+                <p:column headerText="Numéro de Commande">
+                    <h:outputText value="#{article.numeroCommande}"/>
+                </p:column>
+                <p:column headerText="Ligne">
+                    <h:outputText value="#{article.ligne}"/>
+                </p:column>
+                <p:column headerText="Produit ID">
+                    <h:outputText value="#{article.produitid}"/>
+                </p:column>
+                <p:column headerText="Quantité">
+                    <h:outputText value="#{article.quantite}"/>
+                </p:column>
+                <p:column headerText="Prix de Départ">
+                    <h:outputText value="#{article.prixDepart}"/>
+                </p:column>
+                <p:column headerText="Remise">
+                    <h:outputText value="#{article.remise}"/>
+                </p:column>
+            </p:dataTable>
+            <p:panelGrid id="detailArticle" columns="1">
+                <p:panel rendered="#{listeArticlesCommandeMbean.selected_article != null}">
+                    <p:outputLabel value="Détails de l'Article de Commande"/>
+                    <p:outputLabel value="Numéro de Commande: #{listeArticlesCommandeMbean.selected_article.numeroCommande}"/>
+                    <p:outputLabel value="Ligne: #{listeArticlesCommandeMbean.selected_article.ligne}"/>
+                    <p:outputLabel value="Produit ID: #{listeArticlesCommandeMbean.selected_article.produitid}"/>
+                    <p:outputLabel value="Quantité: #{listeArticlesCommandeMbean.selected_article.quantite}"/>
+                    <p:outputLabel value="Prix de Départ: #{listeArticlesCommandeMbean.selected_article.prixDepart}"/>
+                    <p:outputLabel value="Remise: #{listeArticlesCommandeMbean.selected_article.remise}"/>
+                </p:panel>
+            </p:panelGrid>
+        </h:panelGrid>
+    </h:form>
+</h:body>
+</html>

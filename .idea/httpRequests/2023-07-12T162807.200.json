@@ -1,0 +1,134 @@
+[
+  {
+    "nom": "dacos",
+    "numero": "7777",
+    "poids": 70.0,
+    "prenom": "pape"
+  },
+  {
+    "nom": "Mbodj",
+    "numero": "dic2_1",
+    "poids": 55.31201841898795,
+    "prenom": "Fatou"
+  },
+  {
+    "nom": "Diop",
+    "numero": "dic2_18",
+    "poids": 72.25605043005997,
+    "prenom": "Bass"
+  },
+  {
+    "nom": "Diop",
+    "numero": "dic2_12",
+    "poids": 81.37786734525478,
+    "prenom": "Khady"
+  },
+  {
+    "nom": "Diop",
+    "numero": "dic2_8",
+    "poids": 64.41481649141969,
+    "prenom": "Khady"
+  },
+  {
+    "nom": "Mbodj",
+    "numero": "dic2_17",
+    "poids": 67.95013825146525,
+    "prenom": "Fatou"
+  },
+  {
+    "nom": "Mbodj",
+    "numero": "dic2_4",
+    "poids": 94.91757564966078,
+    "prenom": "Khady"
+  },
+  {
+    "nom": "Mbodj",
+    "numero": "dic2_16",
+    "poids": 83.5065645473537,
+    "prenom": "Bass"
+  },
+  {
+    "nom": "Pouye",
+    "numero": "dic2_20",
+    "poids": 84.63257210239964,
+    "prenom": "Bass"
+  },
+  {
+    "nom": "Mbodj",
+    "numero": "dic2_9",
+    "poids": 96.84075682914434,
+    "prenom": "Bass"
+  },
+  {
+    "nom": "Pouye",
+    "numero": "dic2_19",
+    "poids": 60.54025600757801,
+    "prenom": "Bass"
+  },
+  {
+    "nom": "Diop",
+    "numero": "dic2_13",
+    "poids": 52.960355708820174,
+    "prenom": "Bass"
+  },
+  {
+    "nom": "Diop",
+    "numero": "dic2_14",
+    "poids": 58.57038283251054,
+    "prenom": "Khady"
+  },
+  {
+    "nom": "Diop",
+    "numero": "dic2_3",
+    "poids": 81.33057374507707,
+    "prenom": "Bass"
+  },
+  {
+    "nom": "Mbodj",
+    "numero": "dic2_7",
+    "poids": 88.54218796894779,
+    "prenom": "Bass"
+  },
+  {
+    "nom": "Mbodj",
+    "numero": "dic2_2",
+    "poids": 51.9807089811029,
+    "prenom": "Khady"
+  },
+  {
+    "nom": "Pouye",
+    "numero": "dic2_5",
+    "poids": 80.08208205960167,
+    "prenom": "Fatou"
+  },
+  {
+    "nom": "Mbodj",
+    "numero": "dic2_6",
+    "poids": 89.90309711644392,
+    "prenom": "Bass"
+  },
+  {
+    "nom": "Pouye",
+    "numero": "dic2_15",
+    "poids": 52.62103249606106,
+    "prenom": "Bass"
+  },
+  {
+    "nom": "Diop",
+    "numero": "dic2_11",
+    "poids": 96.05213933493096,
+    "prenom": "Bass"
+  },
+  {
+    "nom": "Pouye",
+    "numero": "dic2_10",
+    "poids": 90.86755246656142,
+    "prenom": "Bass"
+  },
+  {
+    "nom": "Fallou",
+    "numero": "44",
+    "poids": 75.0,
+    "prenom": "Samba"
+  }
+]

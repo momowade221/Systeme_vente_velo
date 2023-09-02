@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Systeme_vente_velo:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e785b8dc-61f8-462e-902e-6e4b4abacfa5" name="Changes" comment="Tous les tables et ajouts" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="jsf" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/webapp/categorieList.xhtml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/webapp/index.xhtml" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="isToolWindowVisible" value="false" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2SHrEPIS7TfYVY2gTNd3WWZJF2s" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "JPA.DatabaseSchemaImportDialog": "f64f85dd-17b7-4caa-8576-d2f1ab29a5b3",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "E:/00MY WORKSPACE/07DEVELOPPEMENT/J2EE/Systeme_vente_velo",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.externalResources",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\00MY WORKSPACE\07DEVELOPPEMENT\J2EE\Systeme_vente_velo\src\main\webapp" />
+      <recent name="E:\00MY WORKSPACE\07DEVELOPPEMENT\J2EE\Systeme_vente_velo\src\main\resources\META-INF" />
+      <recent name="E:\00MY WORKSPACE\07DEVELOPPEMENT\J2EE\Systeme_vente_velo12-7-_00-40\Systeme_vente_velo\src\main\java\ept\git\dic2\systeme_vente_velo" />
+      <recent name="E:\00MY WORKSPACE\07DEVELOPPEMENT\J2EE\Systeme_vente_velo12-7-_00-40\Systeme_vente_velo\src\main\java\ept\git\dic2\systeme_vente_velo\beans" />
+      <recent name="E:\00MY WORKSPACE\07DEVELOPPEMENT\J2EE\Systeme_vente_velo\src\main\java\ept\git\dic2\systeme_vente_velo" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\00MY WORKSPACE\07DEVELOPPEMENT\J2EE\Systeme_vente_velo\src\main\webapp" />
+      <recent name="E:\00MY WORKSPACE\07DEVELOPPEMENT\J2EE\Systeme_vente_velo\src\main\webapp\WEB-INF\ressources" />
+      <recent name="E:\00MY WORKSPACE\07DEVELOPPEMENT\J2EE\Systeme_vente_velo\src\main\webapp\WEB-INF" />
+      <recent name="E:\00MY WORKSPACE\07DEVELOPPEMENT\J2EE\Systeme_vente_velo\src\main\resources\images" />
+    </key>
+    <key name="ImportMappingsDialog.RecentPackages">
+      <recent name="ept.git.dic2.systeme_vente_velo.model" />
+    </key>
+  </component>
+  <component name="RunManager" selected="GlassFish Server.GlassFish 7.0.0">
+    <configuration name="GlassFish 7.0.0" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 7.0.0" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/Systeme_vente_velo-1.0-SNAPSHOT" />
+      <deployment>
+        <artifact name="Systeme_vente_velo:war exploded">
+          <settings />
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="DOMAIN" value="domain1" />
+        <option name="PRESERVE" value="false" />
+        <option name="COMPATIBILITY" value="false" />
+        <option name="VIRTUAL_SERVER" />
+        <option name="USERNAME" value="admin" />
+        <option name="CREDENTIAL_ALIAS" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="GlassFish" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="9009" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Systeme_vente_velo:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <configuration name="generated-requests | #6" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="6" requestIdentifier="#6" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #7" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="7" requestIdentifier="#7" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="HTTP Request.generated-requests | #7" />
+        <item itemvalue="HTTP Request.generated-requests | #6" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e785b8dc-61f8-462e-902e-6e4b4abacfa5" name="Changes" comment="" />
+      <created>1688814238340</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1688814238340</updated>
+      <workItem from="1688814239931" duration="6741000" />
+      <workItem from="1689119037866" duration="455000" />
+      <workItem from="1689120385353" duration="264000" />
+      <workItem from="1689177843521" duration="1872000" />
+      <workItem from="1689179744405" duration="1456000" />
+      <workItem from="1689181220085" duration="4472000" />
+      <workItem from="1689243154750" duration="16979000" />
+      <workItem from="1689284780708" duration="9257000" />
+      <workItem from="1689296495103" duration="3000" />
+      <workItem from="1689376262626" duration="4557000" />
+      <workItem from="1689417179806" duration="14877000" />
+      <workItem from="1689545113549" duration="6547000" />
+      <workItem from="1689632402402" duration="2547000" />
+      <workItem from="1689794403560" duration="13000" />
+      <workItem from="1690147665239" duration="640000" />
+      <workItem from="1691139977770" duration="372000" />
+      <workItem from="1691185655885" duration="215000" />
+      <workItem from="1691343784328" duration="4179000" />
+      <workItem from="1693651913478" duration="16904000" />
+      <workItem from="1693669003578" duration="614000" />
+      <workItem from="1693669788868" duration="814000" />
+    </task>
+    <task id="LOCAL-00001" summary="JSF lI">
+      <created>1688818273571</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1688818273571</updated>
+    </task>
+    <task id="LOCAL-00002" summary="JSF SUCCES">
+      <created>1688821027742</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1688821027742</updated>
+    </task>
+    <task id="LOCAL-00003" summary="JSF SUCCESF">
+      <created>1688821230079</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1688821230079</updated>
+    </task>
+    <task id="LOCAL-00004" summary="JSF SUCCESF">
+      <option name="closed" value="true" />
+      <created>1693669022171</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1693669022171</updated>
+    </task>
+    <task id="LOCAL-00005" summary="JSF SUCCESF">
+      <option name="closed" value="true" />
+      <created>1693669219613</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1693669219613</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Tous les tables et ajouts">
+      <option name="closed" value="true" />
+      <created>1693669306002</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1693669306002</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="b9335289-0004-4b6f-b681-802261dd0b83" value="TOOL_WINDOW" />
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="b9335289-0004-4b6f-b681-802261dd0b83">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="JSF lI" />
+    <MESSAGE value="JSF SUCCES" />
+    <MESSAGE value="JSF SUCCESF" />
+    <MESSAGE value="Tous les tables et ajouts" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tous les tables et ajouts" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

@@ -1,0 +1,54 @@
+/* Style pour les étiquettes */
+.formLabel {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Style pour les champs de saisie */
+.formInput {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* Style pour les boutons */
+.formButton {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.formButton:hover {
+    background-color: #0056b3;
+}
+
+/* Style pour les messages d'erreur */
+.formError {
+    color: #ff0000;
+    font-size: 12px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+/* Style pour les div de formulaire */
+.formPanel {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Style pour le formulaire complet */
+.formContainer {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}

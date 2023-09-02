@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+   <title>Ma Page d'Accueil PrimeFaces</title>
+   <style>
+      body {
+         background-image: url("WEB-INF/ressources/images/background-image.jpg");
+         background-size: cover;
+         background-repeat: no-repeat;
+         background-position: center center;
+         margin: 0;
+         padding: 0;
+      }
+
+      .header {
+         height: 80px;
+         background-color: #333;
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         padding: 0 40px;
+         color: #fff;
+      }
+
+      .logo {
+         width: 120px;
+         height: 40px;
+      }
+
+      .navigation {
+         display: flex;
+         align-items: center;
+      }
+
+      .menu-item {
+         margin-right: 20px;
+         color: #fff;
+         text-decoration: none;
+         font-weight: bold;
+      }
+
+      .content {
+         padding: 40px;
+         text-align: center;
+         color: #fff;
+      }
+
+      .footer {
+         height: 60px;
+         background-color: #333;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         color: #fff;
+         font-size: 14px;
+      }
+   </style>
+</h:head>
+
+<h:body>
+   <div class="header">
+      <div class="logo">
+         <h:graphicImage value="images/logo" />
+      </div>
+
+      <div class="navigation">
+         <h:form>
+            <p:menubar >
+               <p:menuitem value="Accueil" url="/index.xhtml" styleClass="menu-item" />
+               <p:submenu label="File">
+                  <p:submenu label="New">
+                     <p:menuitem value="Project" url="#"/>
+                     <p:menuitem value="Other" url="#"/>
+                  </p:submenu>
+                  <p:menuitem value="Open" url="#"></p:menuitem>
+                  <p:menuitem value="Quit" url="#"></p:menuitem>
+               </p:submenu>
+               <p:submenu label="Edit">
+                  <p:menuitem value="Undo" url="#"></p:menuitem>
+                  <p:menuitem value="Redo" url="#"></p:menuitem>
+               </p:submenu>
+               <p:submenu label="Help">
+                  <p:menuitem label="Contents" url="#" />
+                  <p:submenu label="Search">
+                     <p:submenu label="Text">
+                        <p:menuitem value="Workspace" url="#" />
+                     </p:submenu>
+                     <p:menuitem value="File" url="#" />
+                  </p:submenu>
+               </p:submenu>
+
+            </p:menubar>
+         </h:form>
+      </div>
+   </div>
+
+   <div class="content">
+      <h2>Bienvenue sur ma page d'accueil PrimeFaces !</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula lacus a nisi lobortis, id finibus nisl scelerisque. Curabitur consequat fringilla urna vitae elementum. Donec varius facilisis mauris ac aliquam. Morbi faucibus purus a libero malesuada, vitae fringilla ipsum consequat. Proin lobortis sem ac ex viverra interdum. Sed eu finibus arcu.</p>
+      <p>Pellentesque vitae nisi magna. Nulla facilisi. Nunc sollicitudin, metus eu dignissim commodo, dolor nisi varius ex, in vestibulum mauris enim ac urna. Integer vulputate dui vitae sem egestas, vel pulvinar est accumsan. Vivamus tempus ultricies lacus, ut elementum odio varius et. Cras ullamcorper facilisis rhoncus. Aenean nec ante vel felis pharetra varius.</p>
+   </div>
+
+   <div class="footer">
+      <p>Tous droits réservés ; 2023 Mon Entreprise</p>
+   </div>
+</h:body>
+
+</html>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+
+
+<h:head>
+   <title>Liste des catégories</title>
+</h:head>
+
+
+<h:body>
+   <ui:insert name = "header" >
+      <ui:include src = "header.xhtml" />
+   </ui:insert>
+   <h:form id="formId">
+      <h:outputLabel value="Liste des Catégories"/>
+      <h:panelGrid border="2">
+         <p:dataTable id="singleDT" var="e" value="#{listeCategoriesMbean.categories}" selectionMode="single"
+                      selection="#{listeCategoriesMbean.selected_categorie}" rowKey="#{e.id}">
+            <p:ajax event="rowSelect" update="formId:detailCategorie"></p:ajax>
+            <p:column headerText="Identifiant">
+               <h:outputText value="#{e.id}"/>
+            </p:column>
+            <p:column headerText="Nom">
+               <h:outputText value="#{e.nom}"/>
+            </p:column>
+
+         </p:dataTable>
+         <p:panelGrid id="detailCategorie" columns="1">
+            <p:panel rendered="#{listeCategoriesMbean.selected_categorie != null}">
+               <p:outputLabel value="#{listeCategoriesMbean.selected_categorie.nom}"></p:outputLabel>
+            </p:panel>
+         </p:panelGrid>
+      </h:panelGrid>
+   </h:form>
+</h:body>
+</html>

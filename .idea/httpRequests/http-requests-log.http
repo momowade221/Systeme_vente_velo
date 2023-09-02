@@ -1,0 +1,114 @@
+GET http://localhost:8080/Systeme_vente_velo-1.0-SNAPSHOT/api/employes
+
+<> 2023-07-13T155856.500.json
+
+###
+
+GET http://localhost:8080/Systeme_vente_velo-1.0-SNAPSHOT/api/employes/
+
+<> 2023-07-13T155851.500.json
+
+###
+
+GET http://localhost:8080/Systeme_vente_velo-1.0-SNAPSHOT/api/employes
+
+<> 2023-07-13T155832.500.json
+
+###
+
+PUT http://localhost:8080/Systeme_vente_velo-1.0-SNAPSHOT/api/categories/11
+
+{
+"nom":"brand 3"
+}
+
+<> 2023-07-12T171256.405.html
+
+###
+
+PUT http://localhost:8080/Systeme_vente_velo-1.0-SNAPSHOT/api/marques/2
+
+{
+"nom":"brand 3"
+}
+
+<> 2023-07-12T170923.405.html
+
+###
+
+PUT http://localhost:8080/Systeme_vente_velo-1.0-SNAPSHOT/api/marques/2
+
+{
+"nom":"brand 3"
+}
+
+<> 2023-07-12T170549.405.html
+
+###
+
+GET http://localhost:8080/Systeme_vente_velo-1.0-SNAPSHOT/api/marques
+
+<> 2023-07-12T170315.200.json
+
+###
+
+GET http://localhost:8080/Systeme_vente_velo-1.0-SNAPSHOT/api/marques/2
+
+<> 2023-07-12T170309.500.json
+
+###
+
+GET http://localhost:8080/Systeme_vente_velo-1.0-SNAPSHOT/api/marques
+
+<> 2023-07-12T170255.200.json
+
+###
+
+GET http://localhost:8080/Systeme_vente_velo-1.0-SNAPSHOT/api/marques/7
+
+<> 2023-07-12T170247.500.json
+
+###
+
+GET http://localhost:8080/Systeme_vente_velo-1.0-SNAPSHOT/api/categories/7
+
+<> 2023-07-12T170228.500.json
+
+###
+
+GET http://localhost:8080/Systeme_vente_velo-1.0-SNAPSHOT/api/categories
+
+<> 2023-07-12T163019.200.json
+
+###
+
+GET http://localhost:8080/Systeme_vente_velo-1.0-SNAPSHOT/api/categories/10
+
+<> 2023-07-12T162915.500.json
+
+###
+
+GET http://localhost:8080/Systeme_vente_velo-1.0-SNAPSHOT/api/categorie/10
+
+<> 2023-07-12T162848.404.html
+
+###
+
+GET http://localhost:8080/Systeme_vente_velo-1.0-SNAPSHOT/api/eleves
+
+<> 2023-07-12T162807.200.json
+
+###
+
+GET http://localhost:8080/Systeme_vente_velo-1.0-SNAPSHOT/api/categorie/10
+
+<> 2023-07-12T162215.404.html
+
+###
+
+GET http://localhost:8080/Systeme_vente_velo-1.0-SNAPSHOT/api/categorie/7
+
+<> 2023-07-12T162133.404.html
+
+###
+

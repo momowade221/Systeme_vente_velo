@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+
+
+<h:head>
+    <title>Liste des Commandes</title>
+</h:head>
+
+
+<h:body>
+    <ui:insert name="header">
+        <ui:include src="header.xhtml"/>
+    </ui:insert>
+    <h:form id="formId">
+        <h:outputLabel value="Liste des Commandes"/>
+        <h:panelGrid border="2">
+            <p:dataTable id="singleDT" var="commande" value="#{listeCommandesMbean.commandes}" selectionMode="single"
+                         selection="#{listeCommandesMbean.selected_commande}" rowKey="#{commande.numero}">
+                <p:ajax event="rowSelect" update="formId:detailCommande"></p:ajax>
+                <p:column headerText="Numéro de Commande">
+                    <h:outputText value="#{commande.numero}"/>
+                </p:column>
+                <p:column headerText="Client ID">
+                    <h:outputText value="#{commande.clientId}"/>
+                </p:column>
+                <p:column headerText="Statut">
+                    <h:outputText value="#{commande.statut}"/>
+                </p:column>
+                <p:column headerText="Date de Commande">
+                    <h:outputText value="#{commande.dateCommande}"/>
+                </p:column>
+                <p:column headerText="Date de Livraison Voulue">
+                    <h:outputText value="#{commande.dateLivraisonVoulue}"/>
+                </p:column>
+                <p:column headerText="Date de Livraison">
+                    <h:outputText value="#{commande.dateLivraison}"/>
+                </p:column>
+                <p:column headerText="Magasin ID">
+                    <h:outputText value="#{commande.magasinId}"/>
+                </p:column>
+                <p:column headerText="Vendeur ID">
+                    <h:outputText value="#{commande.vendeurId}"/>
+                </p:column>
+            </p:dataTable>
+            <p:panelGrid id="detailCommande" columns="1">
+                <p:panel rendered="#{listeCommandesMbean.selected_commande != null}">
+                    <p:outputLabel value="Détails de la Commande"/>
+                    <p:outputLabel value="Numéro de Commande: #{listeCommandesMbean.selected_commande.numero}"/>
+                    <p:outputLabel value="Client ID: #{listeCommandesMbean.selected_commande.clientId}"/>
+                    <p:outputLabel value="Statut: #{listeCommandesMbean.selected_commande.statut}"/>
+                    <p:outputLabel value="Date de Commande: #{listeCommandesMbean.selected_commande.dateCommande}"/>
+                    <p:outputLabel value="Date de Livraison Voulue: #{listeCommandesMbean.selected_commande.dateLivraisonVoulue}"/>
+                    <p:outputLabel value="Date de Livraison: #{listeCommandesMbean.selected_commande.dateLivraison}"/>
+                    <p:outputLabel value="Magasin ID: #{listeCommandesMbean.selected_commande.magasinId}"/>
+                    <p:outputLabel value="Vendeur ID: #{listeCommandesMbean.selected_commande.vendeurId}"/>
+                </p:panel>
+            </p:panelGrid>
+        </h:panelGrid>
+    </h:form>
+</h:body>
+</html>

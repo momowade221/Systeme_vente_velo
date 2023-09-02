@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd"
+             version="3.0">
+
+    <persistence-unit name="vente_velo_persis">
+        <jta-data-source>jdbc/PostgresDataSource</jta-data-source>
+        <class>ept.git.dic2.systeme_vente_velo.model.Categorie</class>
+        <class>ept.git.dic2.systeme_vente_velo.model.Client</class>
+        <class>ept.git.dic2.systeme_vente_velo.model.Commande</class>
+        <class>ept.git.dic2.systeme_vente_velo.model.Employe</class>
+        <class>ept.git.dic2.systeme_vente_velo.model.Magasin</class>
+        <class>ept.git.dic2.systeme_vente_velo.model.Marque</class>
+        <class>ept.git.dic2.systeme_vente_velo.model.Produit</class>
+        <class>ept.git.dic2.systeme_vente_velo.model.ArticleCommande</class>
+        <class>ept.git.dic2.systeme_vente_velo.model.CategorieProduit</class>
+        <class>ept.git.dic2.systeme_vente_velo.model.ClientCommande</class>
+        <class>ept.git.dic2.systeme_vente_velo.model.Eleve</class>
+        <class>ept.git.dic2.systeme_vente_velo.model.MagasinCommande</class>
+        <class>ept.git.dic2.systeme_vente_velo.model.MagasinEmploye</class>
+        <class>ept.git.dic2.systeme_vente_velo.model.MarqueProduit</class>
+        <class>ept.git.dic2.systeme_vente_velo.model.Personne</class>
+        <class>ept.git.dic2.systeme_vente_velo.model.Stock</class>
+
+        <properties>
+            <property name="toplink.jdbc.url" value="jdbc:postgresql://localhost:5432/vente_velos_db"/>
+            <property name="toplink.jdbc.driver" value="org.postgresql.Driver"/>
+            <property name="toplink.jdbc.user" value="postgres"/>
+            <property name="toplink.jdbc.password" value="Jiw@y221"/>
+            <property name="hibernate.connection.url" value="jdbc:postgresql://localhost:5432/vente_velo"/>
+            <property name="hibernate.connection.driver_class" value="org.postgresql.Driver"/>
+            <property name="hibernate.connection.username" value="postgres"/>
+            <property name="hibernate.connection.password" value="Jiw@y221"/>
+            <property name="openjpa.ConnectionURL" value="jdbc:postgresql://localhost:5432/vente_velo"/>
+            <property name="openjpa.ConnectionDriverName" value="org.postgresql.Driver"/>
+            <property name="openjpa.ConnectionUserName" value="postgres"/>
+            <property name="openjpa.ConnectionPassword" value="Jiw@y221"/>
+            <property name="eclipselink.jdbc.url" value="jdbc:postgresql://localhost:5432/vente_velo"/>
+            <property name="eclipselink.jdbc.driver" value="org.postgresql.Driver"/>
+            <property name="eclipselink.jdbc.user" value="postgres"/>
+            <property name="eclipselink.jdbc.password" value="Jiw@y221"/>
+        </properties>
+    </persistence-unit>
+
+</persistence>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<f:view>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"/>
+    <h:messages/>
+    <h:outputText value="#{addEleveMbean.message}"/>
+    <style type="text/css">
+        .formPanelabel{
+            background-color: darkorchid;
+            text-align: right;
+        }
+        .formPanelValue{
+            background-color: grey;
+        }
+    </style>
+
+
+    <h:form>
+
+
+        <!--        <h:panelGrid columns="2" border="1" cellpadding="10" columnClasses="formPanelabel,formPanelValue">-->
+        <h:panelGrid columns="2" cellpadding="10" columnClasses="bg-success,bg-warning">
+
+
+            <h:outputLabel for="numero" value="numero"></h:outputLabel>
+            <h:inputText id="numero" value="#{addEleveMbean.eleve.numero}"></h:inputText>
+
+            <h:outputLabel for="prenom" value="Prenom"></h:outputLabel>
+            <h:inputText id="prenom" value="#{addEleveMbean.eleve.prenom}" ></h:inputText>
+
+            <h:outputLabel for="nom" value="nom"></h:outputLabel>
+            <h:inputText id="nom" value="#{addEleveMbean.eleve.nom}" required="true" requiredMessage="Le nom est obligatoire"></h:inputText>
+
+
+            <h:outputLabel for="poids" value="poids"></h:outputLabel>
+            <h:inputText id="poids" value="#{addEleveMbean.eleve.poids}" ></h:inputText>
+
+            <f:facet name="footer">
+                <div>
+                    <h:commandButton styleClass="btn btn-outline-danger" value="enregistrer" action="#{addEleveMbean.save()}"></h:commandButton>
+                    <!-- immediate="true" permet de dire de ne pas valider le formulaire et d aller directement à la page spécifiée -->
+                    <h:commandButton styleClass="btn btn-outline-success mx-4" value="Annuler" action="listeEleves.xhtml" immediate="true"></h:commandButton>
+                </div>
+            </f:facet>
+            <f:facet name="header">
+                <h:outputText value=" Ajout d'un élève" styleClass="text-danger">Ajout d'un élève</h:outputText>
+            </f:facet>
+        </h:panelGrid>
+    </h:form>
+</f:view>
+</html>

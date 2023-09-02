@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+
+
+<h:head>
+    <title>Liste des Stocks</title>
+</h:head>
+
+
+<h:body>
+    <ui:insert name="header">
+        <ui:include src="header.xhtml"/>
+    </ui:insert>
+    <h:form id="formId">
+        <h:outputLabel value="Liste des Stocks"/>
+        <h:panelGrid border="2">
+            <p:dataTable id="singleDT" var="stock" value="#{listeStocksMbean.stocks}" selectionMode="single"
+                         selection="#{listeStocksMbean.selected_stock}" rowKey="#{stock.produitId}">
+                <p:ajax event="rowSelect" update="formId:detailStock"></p:ajax>
+                <p:column headerText="Quantité">
+                    <h:outputText value="#{stock.quantite}"/>
+                </p:column>
+                <p:column headerText="Produit ID">
+                    <h:outputText value="#{stock.produitId}"/>
+                </p:column>
+                <p:column headerText="Magasin ID">
+                    <h:outputText value="#{stock.magasinId}"/>
+                </p:column>
+            </p:dataTable>
+            <p:panelGrid id="detailStock" columns="1">
+                <p:panel rendered="#{listeStocksMbean.selected_stock != null}">
+                    <p:outputLabel value="Détails du Stock"/>
+                    <p:outputLabel value="Quantité: #{listeStocksMbean.selected_stock.quantite}"/>
+                    <p:outputLabel value="Produit ID: #{listeStocksMbean.selected_stock.produitId}"/>
+                    <p:outputLabel value="Magasin ID: #{listeStocksMbean.selected_stock.magasinId}"/>
+                </p:panel>
+            </p:panelGrid>
+        </h:panelGrid>
+    </h:form>
+</h:body>
+</html>

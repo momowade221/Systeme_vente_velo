@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<h:head>
+    <title>Ajout d'une Marque</title>
+</h:head>
+<f:view>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+          crossorigin="anonymous"/>
+
+    <ui:insert name="header">
+        <ui:include src="header.xhtml"/>
+    </ui:insert>
+
+    <h:form class="container bg-primary text-white font-weight-bold rounded mt-4">
+        <h:outputText styleClass="ql-color-white" value="#{addMarque.message}"/>
+
+        <h:panelGrid columns="2" cellpadding="10">
+            <h:outputLabel for="nom" value="Nom" styleClass="text-light font-weight-bold"></h:outputLabel>
+            <h:inputText id="nom" value="#{addMarque.marque.nom}" styleClass="form-control"/>
+
+            <f:facet name="footer">
+                <div>
+                    <h:commandButton styleClass="btn btn-danger" value="Enregistrer"
+                                     action="#{addMarque.save()}"/>
+                    <h:commandButton styleClass="btn btn-success mx-4" value="Annuler"
+                                     action="marqueList.xhtml" immediate="true"/>
+                </div>
+            </f:facet>
+            <f:facet name="header">
+                <h:outputText value="Ajout d'une marque" styleClass="text-light">Ajout d'une marque</h:outputText>
+                <h:messages/>
+            </f:facet>
+        </h:panelGrid>
+    </h:form>
+</f:view>
+
+<ui:insert name="footer">
+    <ui:include src="footer.xhtml"/>
+</ui:insert>
+</html>
