@@ -50,6 +50,9 @@
                 <p:column headerText="Code ZIP">
                     <h:outputText value="#{client.codeZip}"/>
                 </p:column>
+                <p:column headerText="Suppression">
+                    <p:commandButton value="Supprimer" action="#{clientDeleteMbean.delete(client)}"/>
+                </p:column>
             </p:dataTable>
             <p:panelGrid id="detailClient" columns="1">
                 <p:panel rendered="#{listeClientsMbean.selected_client != null}">

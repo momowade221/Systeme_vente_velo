@@ -21,8 +21,10 @@
     <h:form id="formId">
         <h:outputLabel value="Liste des Articles de Commande"/>
         <h:panelGrid border="2">
-            <p:dataTable id="singleDT" var="article" value="#{listeArticlesCommandeMbean.articles}" selectionMode="single"
-                         selection="#{listeArticlesCommandeMbean.selected_article}" rowKey="#{article.numeroCommande}">
+            <p:dataTable id="singleDT" var="article" value="#{listeArticleCommandesMbean.articleCommandes}"
+                         selectionMode="single"
+                         selection="#{listeArticleCommandesMbean.selected_articleCommande}"
+                         rowKey="#{article.numeroCommande}">
                 <p:ajax event="rowSelect" update="formId:detailArticle"></p:ajax>
                 <p:column headerText="Numéro de Commande">
                     <h:outputText value="#{article.numeroCommande}"/>
@@ -31,7 +33,7 @@
                     <h:outputText value="#{article.ligne}"/>
                 </p:column>
                 <p:column headerText="Produit ID">
-                    <h:outputText value="#{article.produitid}"/>
+                    <h:outputText value="#{article.produitId}"/>
                 </p:column>
                 <p:column headerText="Quantité">
                     <h:outputText value="#{article.quantite}"/>
@@ -41,6 +43,9 @@
                 </p:column>
                 <p:column headerText="Remise">
                     <h:outputText value="#{article.remise}"/>
+                </p:column>
+                <p:column headerText="Suppression">
+                    <p:commandButton value="Supprimer" action="#{articleCommandeDeleteMbean.delete(article)}"/>
                 </p:column>
             </p:dataTable>
             <p:panelGrid id="detailArticle" columns="1">

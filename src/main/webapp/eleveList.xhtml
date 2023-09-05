@@ -14,7 +14,9 @@
 </h:head>
 <h:body>
     <h:form id="formId">
+
     <h:outputLabel value="Listes élèves to do"/>
+        <p:messages id="messages" showDetail="true" autoUpdate="true"/>
     <h:panelGrid border="2">
     <p:dataTable id="singleDT" var="e" value="#{listeElevesMbean.eleves}" selectionMode="single"
                  selection="#{listeElevesMbean.selected_eleve}" rowKey="#{e.numero}">
@@ -28,6 +30,10 @@
         <p:column headerText="Poids">
             <h:outputText value="#{e.poids}"/>
         </p:column>
+        <p:column headerText="Suppression">
+            <p:commandButton value="Supprimer" action="#{eleveDeleteMbean.delete(e)}"/>
+        </p:column>
+
     </p:dataTable>
         <p:panelGrid id="detailEleve" columns="1">
         <p:panel rendered="#{listeElevesMbean.selected_eleve != null}">

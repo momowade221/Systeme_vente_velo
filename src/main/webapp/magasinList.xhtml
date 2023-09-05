@@ -47,6 +47,9 @@
                 <p:column headerText="Ville">
                     <h:outputText value="#{magasin.ville}"/>
                 </p:column>
+                <p:column headerText="Suppression">
+                    <p:commandButton value="Supprimer" action="#{magasinDeleteMbean.delete(magasin)}"/>
+                </p:column>
             </p:dataTable>
             <p:panelGrid id="detailMagasin" columns="1">
                 <p:panel rendered="#{listeMagasinsMbean.selected_magasin != null}">

@@ -32,6 +32,9 @@
                 <p:column headerText="Magasin ID">
                     <h:outputText value="#{stock.magasinId}"/>
                 </p:column>
+                <p:column headerText="Suppression">
+                    <p:commandButton value="Supprimer" action="#{stockDeleteMbean.delete(stock)}"/>
+                </p:column>
             </p:dataTable>
             <p:panelGrid id="detailStock" columns="1">
                 <p:panel rendered="#{listeStocksMbean.selected_stock != null}">

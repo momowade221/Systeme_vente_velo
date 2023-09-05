@@ -9,7 +9,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e785b8dc-61f8-462e-902e-6e4b4abacfa5" name="Changes" comment="Tous les tables et ajouts" />
+    <list default="true" id="e785b8dc-61f8-462e-902e-6e4b4abacfa5" name="Changes" comment="Tous les tables et ajouts">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ept/git/dic2/systeme_vente_velo/controller/ArticleCommandeDelete.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ept/git/dic2/systeme_vente_velo/controller/CategorieDelete.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ept/git/dic2/systeme_vente_velo/controller/ClientDelete.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ept/git/dic2/systeme_vente_velo/controller/CommandeDelete.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ept/git/dic2/systeme_vente_velo/controller/EleveDelete.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ept/git/dic2/systeme_vente_velo/controller/EmployeDelete.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ept/git/dic2/systeme_vente_velo/controller/MagasinDelete.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ept/git/dic2/systeme_vente_velo/controller/MarqueDelete.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ept/git/dic2/systeme_vente_velo/controller/ProduitDelete.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ept/git/dic2/systeme_vente_velo/controller/StockDelete.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ChatGPTCopilotChannelManager.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ChatGPTCopilotChannelManager.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/articleCommandeList.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/articleCommandeList.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/categorieList.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/categorieList.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/clientList.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/clientList.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/commandeList.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/commandeList.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/eleveList.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/eleveList.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/employeList.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/employeList.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/magasinList.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/magasinList.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/marqueList.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/marqueList.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/produitList.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/produitList.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/stockList.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/stockList.xhtml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,9 +42,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="jsf" />
         <option value="CSS File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -71,12 +95,14 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "dev",
     "last_opened_file_path": "E:/00MY WORKSPACE/07DEVELOPPEMENT/J2EE/Systeme_vente_velo",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "preferences.externalResources",
     "vue.rearranger.settings.migration": "true"
   },
@@ -202,7 +228,8 @@
       <workItem from="1691343784328" duration="4179000" />
       <workItem from="1693651913478" duration="16904000" />
       <workItem from="1693669003578" duration="614000" />
-      <workItem from="1693669788868" duration="814000" />
+      <workItem from="1693669788868" duration="2317000" />
+      <workItem from="1693908268233" duration="9981000" />
     </task>
     <task id="LOCAL-00001" summary="JSF lI">
       <created>1688818273571</created>

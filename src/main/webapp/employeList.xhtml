@@ -47,6 +47,9 @@
                 <p:column headerText="Manager ID">
                     <h:outputText value="#{employe.managerId}"/>
                 </p:column>
+                <p:column headerText="Suppression">
+                    <p:commandButton value="Supprimer" action="#{employeDeleteMbean.delete(employe)}"/>
+                </p:column>
             </p:dataTable>
             <p:panelGrid id="detailEmploye" columns="1">
                 <p:panel rendered="#{listeEmployesMbean.selected_employe != null}">

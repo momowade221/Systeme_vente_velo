@@ -22,14 +22,17 @@
    <h:form id="formId">
       <h:outputLabel value="Liste des Catégories"/>
       <h:panelGrid border="2">
-         <p:dataTable id="singleDT" var="e" value="#{listeCategoriesMbean.categories}" selectionMode="single"
-                      selection="#{listeCategoriesMbean.selected_categorie}" rowKey="#{e.id}">
+         <p:dataTable id="singleDT" var="cat" value="#{listeCategoriesMbean.categories}" selectionMode="single"
+                      selection="#{listeCategoriesMbean.selected_categorie}" rowKey="#{cat.id}">
             <p:ajax event="rowSelect" update="formId:detailCategorie"></p:ajax>
             <p:column headerText="Identifiant">
-               <h:outputText value="#{e.id}"/>
+               <h:outputText value="#{cat.id}"/>
             </p:column>
             <p:column headerText="Nom">
-               <h:outputText value="#{e.nom}"/>
+               <h:outputText value="#{cat.nom}"/>
+            </p:column>
+            <p:column headerText="Suppression">
+               <p:commandButton value="Supprimer" action="#{categorieDeleteMbean.delete(cat)}"/>
             </p:column>
 
          </p:dataTable>
