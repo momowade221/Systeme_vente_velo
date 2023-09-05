@@ -11,6 +11,23 @@
 
 <h:head>
     <title>Liste des articles de commande</title>
+    <style type="text/css">
+
+        .buttons-dialog {
+            border: none; /* Supprimez la bordure */
+            padding: 10px 20px; /* Espacement du texte à l'intérieur du bouton */
+            cursor: pointer; /* Curseur de la main au survol */
+            color: #ffffff;
+        }
+        .buttons-dialog1:hover {
+            background-color: #218838; /* Darker green on hover */
+            /* Add any other hover styles you want */
+        }
+        .buttons-dialog2:hover {
+            background-color: #ff0000; /* Darker green on hover */
+            /* Add any other hover styles you want */
+        }
+    </style>
 </h:head>
 
 
@@ -44,22 +61,60 @@
                 <p:column headerText="Remise">
                     <h:outputText value="#{article.remise}"/>
                 </p:column>
+
+                <!-- Modification et Suppression -->
+
+                <p:column headerText="Modification">
+                    <p:commandButton value="Modifier" oncomplete="PF('editDialog').show()" update=":editForm">
+                        <f:setPropertyActionListener target="#{articleCommandeEditMbean.articleCommande}" value="#{article}" />
+                    </p:commandButton>
+                </p:column>
+
                 <p:column headerText="Suppression">
                     <p:commandButton value="Supprimer" action="#{articleCommandeDeleteMbean.delete(article)}"/>
                 </p:column>
             </p:dataTable>
             <p:panelGrid id="detailArticle" columns="1">
-                <p:panel rendered="#{listeArticlesCommandeMbean.selected_article != null}">
+                <p:panel rendered="#{listeArticleCommandesMbean.selected_articleCommande != null}">
                     <p:outputLabel value="Détails de l'Article de Commande"/>
-                    <p:outputLabel value="Numéro de Commande: #{listeArticlesCommandeMbean.selected_article.numeroCommande}"/>
-                    <p:outputLabel value="Ligne: #{listeArticlesCommandeMbean.selected_article.ligne}"/>
-                    <p:outputLabel value="Produit ID: #{listeArticlesCommandeMbean.selected_article.produitid}"/>
-                    <p:outputLabel value="Quantité: #{listeArticlesCommandeMbean.selected_article.quantite}"/>
-                    <p:outputLabel value="Prix de Départ: #{listeArticlesCommandeMbean.selected_article.prixDepart}"/>
-                    <p:outputLabel value="Remise: #{listeArticlesCommandeMbean.selected_article.remise}"/>
+                    <p:outputLabel value="Numéro de Commande: #{listeArticleCommandesMbean.selected_articleCommande.numeroCommande}"/>
+                    <p:outputLabel value="Ligne: #{listeArticleCommandesMbean.selected_articleCommande.ligne}"/>
+                    <p:outputLabel value="Produit ID: #{listeArticleCommandesMbean.selected_articleCommande.produitId}"/>
+                    <p:outputLabel value="Quantité: #{listeArticleCommandesMbean.selected_articleCommande.quantite}"/>
+                    <p:outputLabel value="Prix de Départ: #{listeArticleCommandesMbean.selected_articleCommande.prixDepart}"/>
+                    <p:outputLabel value="Remise: #{listeArticleCommandesMbean.selected_articleCommande.remise}"/>
                 </p:panel>
             </p:panelGrid>
         </h:panelGrid>
     </h:form>
+    <!-- Boîte de dialogue de modification -->
+    <p:dialog header="Modifier la catégorie" widgetVar="editDialog" resizable="false" modal="true" dynamic="true">
+        <h:form id="editForm">
+            <h:panelGrid columns="2" cellpadding="10">
+                <h:outputLabel for="ligne" value="Ligne" styleClass="text-light font-weight-bold"></h:outputLabel>
+                <h:inputText id="ligne" value="#{articleCommandeEditMbean.articleCommande.ligne}" styleClass="form-control"/>
+
+                <h:outputLabel for="produitid" value="Produit ID" styleClass="text-light font-weight-bold"></h:outputLabel>
+                <h:inputText id="produitid" value="#{articleCommandeEditMbean.articleCommande.produitId}" styleClass="form-control"/>
+
+                <h:outputLabel for="quantite" value="Quantité" styleClass="text-light font-weight-bold"></h:outputLabel>
+                <h:inputText id="quantite" value="#{articleCommandeEditMbean.articleCommande.quantite}" styleClass="form-control"/>
+
+                <h:outputLabel for="prixDepart" value="Prix de départ" styleClass="text-light font-weight-bold"></h:outputLabel>
+                <h:inputText id="prixDepart" value="#{articleCommandeEditMbean.articleCommande.prixDepart}" styleClass="form-control"/>
+
+                <h:outputLabel for="remise" value="Remise" styleClass="text-light font-weight-bold"></h:outputLabel>
+                <h:inputText id="remise" value="#{articleCommandeEditMbean.articleCommande.remise}" styleClass="form-control"/>
+
+            </h:panelGrid>
+
+            <!-- Autres champs à modifier ici... -->
+
+            <div style="text-align: center; margin-top: 20px"> <!-- Pour aligner horizontalement -->
+                <h:commandButton  styleClass="buttons-dialog buttons-dialog2" style="background-color: red ; " value="Annuler" type="button" onclick="PF('editDialog').hide()" />
+                <h:commandButton styleClass="buttons-dialog buttons-dialog1" style="margin-left: 15px; background-color:  #28a745;" value="Enregistrer" action="#{articleCommandeEditMbean.edit()}" oncomplete="PF('editDialog').hide()" />
+            </div>
+        </h:form>
+    </p:dialog>
 </h:body>
 </html>

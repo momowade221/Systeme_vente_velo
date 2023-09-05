@@ -10,6 +10,23 @@
 
 <h:head>
     <title>Liste des Stocks</title>
+    <style type="text/css">
+
+        .buttons-dialog {
+            border: none; /* Supprimez la bordure */
+            padding: 10px 20px; /* Espacement du texte à l'intérieur du bouton */
+            cursor: pointer; /* Curseur de la main au survol */
+            color: #ffffff;
+        }
+        .buttons-dialog1:hover {
+            background-color: #218838; /* Darker green on hover */
+            /* Add any other hover styles you want */
+        }
+        .buttons-dialog2:hover {
+            background-color: #ff0000; /* Darker green on hover */
+            /* Add any other hover styles you want */
+        }
+    </style>
 </h:head>
 
 
@@ -32,6 +49,14 @@
                 <p:column headerText="Magasin ID">
                     <h:outputText value="#{stock.magasinId}"/>
                 </p:column>
+                <!-- Modification et Suppression -->
+
+                <p:column headerText="Modification">
+                    <p:commandButton value="Modifier" oncomplete="PF('editDialog').show()" update=":editForm">
+                        <f:setPropertyActionListener target="#{stockEditMbean.stock}" value="#{stock}" />
+                    </p:commandButton>
+                </p:column>
+
                 <p:column headerText="Suppression">
                     <p:commandButton value="Supprimer" action="#{stockDeleteMbean.delete(stock)}"/>
                 </p:column>
@@ -46,5 +71,28 @@
             </p:panelGrid>
         </h:panelGrid>
     </h:form>
+    <!-- Boîte de dialogue de modification -->
+    <p:dialog header="Modifier la catégorie" widgetVar="editDialog" resizable="false" modal="true" dynamic="true">
+        <h:form id="editForm">
+            <h:panelGrid columns="2" cellpadding="10">
+                <h:outputLabel for="quantite" value="Quantité" styleClass="text-light font-weight-bold"></h:outputLabel>
+                <h:inputText id="quantite" value="#{stockEditMbean.stock.quantite}" styleClass="form-control"/>
+
+                <h:outputLabel for="produitId" value="Produit ID" styleClass="text-light font-weight-bold"></h:outputLabel>
+                <h:inputText id="produitId" value="#{stockEditMbean.stock.produitId}" styleClass="form-control"/>
+
+                <h:outputLabel for="magasinId" value="Magasin ID" styleClass="text-light font-weight-bold"></h:outputLabel>
+                <h:inputText id="magasinId" value="#{stockEditMbean.stock.magasinId}" styleClass="form-control"/>
+
+            </h:panelGrid>
+
+            <!-- Autres champs à modifier ici... -->
+
+            <div style="text-align: center; margin-top: 20px"> <!-- Pour aligner horizontalement -->
+                <h:commandButton  styleClass="buttons-dialog buttons-dialog2" style="background-color: red ; " value="Annuler" type="button" onclick="PF('editDialog').hide()" />
+                <h:commandButton styleClass="buttons-dialog buttons-dialog1" style="margin-left: 15px; background-color:  #28a745;" value="Enregistrer" action="#{stockEditMbean.edit()}" oncomplete="PF('editDialog').hide()" />
+            </div>
+        </h:form>
+    </p:dialog>
 </h:body>
 </html>
