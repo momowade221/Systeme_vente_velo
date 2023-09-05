@@ -10,7 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e785b8dc-61f8-462e-902e-6e4b4abacfa5" name="Changes" comment="Suppression">
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/clientList.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/clientList.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ept/git/dic2/systeme_vente_velo/controller/CategorieEdit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/categorieList.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/categorieList.xhtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,9 +22,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="jsf" />
         <option value="CSS File" />
         <option value="Class" />
+        <option value="jsf" />
       </list>
     </option>
   </component>
@@ -207,7 +209,7 @@
       <workItem from="1693651913478" duration="16904000" />
       <workItem from="1693669003578" duration="614000" />
       <workItem from="1693669788868" duration="2317000" />
-      <workItem from="1693908268233" duration="10602000" />
+      <workItem from="1693908268233" duration="14529000" />
     </task>
     <task id="LOCAL-00001" summary="JSF lI">
       <created>1688818273571</created>
