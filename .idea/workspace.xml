@@ -9,7 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e785b8dc-61f8-462e-902e-6e4b4abacfa5" name="Changes" comment="Suppression" />
+    <list default="true" id="e785b8dc-61f8-462e-902e-6e4b4abacfa5" name="Changes" comment="Suppression">
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/clientList.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/clientList.xhtml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -205,7 +207,7 @@
       <workItem from="1693651913478" duration="16904000" />
       <workItem from="1693669003578" duration="614000" />
       <workItem from="1693669788868" duration="2317000" />
-      <workItem from="1693908268233" duration="10284000" />
+      <workItem from="1693908268233" duration="10602000" />
     </task>
     <task id="LOCAL-00001" summary="JSF lI">
       <created>1688818273571</created>
