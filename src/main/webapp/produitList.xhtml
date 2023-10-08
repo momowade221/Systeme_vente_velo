@@ -10,6 +10,24 @@
 
 <h:head>
     <title>Liste des Produits</title>
+    <style type="text/css">
+
+        .buttons-dialog {
+            border: none; /* Supprimez la bordure */
+            padding: 10px 20px; /* Espacement du texte à l'intérieur du bouton */
+            cursor: pointer; /* Curseur de la main au survol */
+            color: #ffffff;
+        }
+        .buttons-dialog1:hover {
+            background-color: #218838; /* Darker green on hover */
+            /* Add any other hover styles you want */
+        }
+        .buttons-dialog2:hover {
+            background-color: #ff0000; /* Darker green on hover */
+            /* Add any other hover styles you want */
+        }
+    </style>
+
 </h:head>
 
 
@@ -41,6 +59,16 @@
                 <p:column headerText="Marque ID">
                     <h:outputText value="#{produit.marqueId}"/>
                 </p:column>
+                <p:column headerText="Modification">
+                    <p:commandButton value="Modifier" oncomplete="PF('editDialog').show()" update=":editForm">
+                        <f:setPropertyActionListener target="#{produitEditMbean.produit}" value="#{produit}" />
+                    </p:commandButton>
+                </p:column>
+                <p:column headerText="Suppression">
+                    <p:commandButton value="Supprimer" action="#{produitDeleteMbean.delete(produit)}"/>
+                </p:column>
+
+               
             </p:dataTable>
             <p:panelGrid id="detailProduit" columns="1">
                 <p:panel rendered="#{listeProduitsMbean.selected_produit != null}">
@@ -55,5 +83,34 @@
             </p:panelGrid>
         </h:panelGrid>
     </h:form>
+    <!-- Boîte de dialogue de modification -->
+    <p:dialog header="Modifier la catégorie" widgetVar="editDialog" resizable="false" modal="true" dynamic="true">
+        <h:form id="editForm">
+            <h:panelGrid columns="2" cellpadding="10">
+                <h:outputLabel for="nom" value="Nom" styleClass="text-light font-weight-bold"></h:outputLabel>
+                <h:inputText id="nom" value="#{produitEditMbean.produit.nom}" styleClass="form-control"/>
+
+                <h:outputLabel for="anneeModel" value="Année du modèle" styleClass="text-light font-weight-bold"></h:outputLabel>
+                <h:inputText id="anneeModel" value="#{produitEditMbean.produit.anneeModel}" styleClass="form-control"/>
+
+                <h:outputLabel for="prixDepart" value="Prix de départ" styleClass="text-light font-weight-bold"></h:outputLabel>
+                <h:inputText id="prixDepart" value="#{produitEditMbean.produit.prixDepart}" styleClass="form-control"/>
+
+                <h:outputLabel for="categorieId" value="Catégorie ID" styleClass="text-light font-weight-bold"></h:outputLabel>
+                <h:inputText id="categorieId" value="#{produitEditMbean.produit.categorieId}" styleClass="form-control"/>
+
+                <h:outputLabel for="marqueId" value="Marque ID" styleClass="text-light font-weight-bold"></h:outputLabel>
+                <h:inputText id="marqueId" value="#{produitEditMbean.produit.marqueId}" styleClass="form-control"/>
+
+            </h:panelGrid>
+
+            <!-- Autres champs à modifier ici... -->
+
+            <div style="text-align: center; margin-top: 20px"> <!-- Pour aligner horizontalement -->
+                <h:commandButton  styleClass="buttons-dialog buttons-dialog2" style="background-color: red ; " value="Annuler" type="button" onclick="PF('editDialog').hide()" />
+                <h:commandButton styleClass="buttons-dialog buttons-dialog1" style="margin-left: 15px; background-color:  #28a745;" value="Enregistrer" action="#{produitEditMbean.edit()}" oncomplete="PF('editDialog').hide()" />
+            </div>
+        </h:form>
+    </p:dialog>
 </h:body>
 </html>

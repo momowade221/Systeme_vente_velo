@@ -10,6 +10,25 @@
 
 <h:head>
     <title>Liste des Clients</title>
+    <style type="text/css">
+
+        .buttons-dialog {
+            border: none; /* Supprimez la bordure */
+            padding: 10px 20px; /* Espacement du texte à l'intérieur du bouton */
+            cursor: pointer; /* Curseur de la main au survol */
+            color: #ffffff;
+        }
+        .buttons-dialog1:hover {
+            background-color: #218838; /* Darker green on hover */
+            /* Add any other hover styles you want */
+        }
+        .buttons-dialog2:hover {
+            background-color: #ff0000; /* Darker green on hover */
+            /* Add any other hover styles you want */
+        }
+    </style>
+
+
 </h:head>
 
 
@@ -33,7 +52,7 @@
                     <h:outputText value="#{client.nom}"/>
                 </p:column>
                 <p:column headerText="Adresse">
-                    <h:outputText value="#{client.addresse}"/>
+                    <h:outputText value="#{client.adresse}"/>
                 </p:column>
                 <p:column headerText="Téléphone">
                     <h:outputText value="#{client.telephone}"/>
@@ -50,6 +69,15 @@
                 <p:column headerText="Code ZIP">
                     <h:outputText value="#{client.codeZip}"/>
                 </p:column>
+                <p:column headerText="Modification">
+                    <p:commandButton value="Modifier" oncomplete="PF('editDialog').show()" update=":editForm">
+                        <f:setPropertyActionListener target="#{clientEditMbean.client}" value="#{client}" />
+                    </p:commandButton>
+                </p:column>
+                <p:column headerText="Suppression">
+                    <p:commandButton value="Supprimer" action="#{clientDeleteMbean.delete(client)}"/>
+                </p:column>
+
             </p:dataTable>
             <p:panelGrid id="detailClient" columns="1">
                 <p:panel rendered="#{listeClientsMbean.selected_client != null}">
@@ -57,7 +85,7 @@
                     <p:outputLabel value="ID: #{listeClientsMbean.selected_client.id}"/>
                     <p:outputLabel value="Prénom: #{listeClientsMbean.selected_client.prenom}"/>
                     <p:outputLabel value="Nom: #{listeClientsMbean.selected_client.nom}"/>
-                    <p:outputLabel value="Adresse: #{listeClientsMbean.selected_client.addresse}"/>
+                    <p:outputLabel value="Adresse: #{listeClientsMbean.selected_client.adresse}"/>
                     <p:outputLabel value="Téléphone: #{listeClientsMbean.selected_client.telephone}"/>
                     <p:outputLabel value="Email: #{listeClientsMbean.selected_client.email}"/>
                     <p:outputLabel value="Ville: #{listeClientsMbean.selected_client.ville}"/>
@@ -67,5 +95,40 @@
             </p:panelGrid>
         </h:panelGrid>
     </h:form>
+
+    <!-- Boîte de dialogue de modification -->
+    <p:dialog header="Modifier le client" widgetVar="editDialog" resizable="false" modal="true" dynamic="true">
+        <h:form id="editForm">
+            <h:panelGrid columns="2" cellpadding="10">
+            <h:outputLabel for="prenom" value="Prénom" styleClass="text-light font-weight-bold"></h:outputLabel>
+            <h:inputText id="prenom" value="#{clientEditMbean.client.prenom}" styleClass="form-control"/>
+
+            <h:outputLabel for="nom" value="Nom" styleClass="text-light font-weight-bold"></h:outputLabel>
+            <h:inputText id="nom" value="#{clientEditMbean.client.nom}" styleClass="form-control"/>
+
+            <h:outputLabel for="adresse" value="Adresse" styleClass="text-light font-weight-bold"></h:outputLabel>
+            <h:inputText id="adresse" value="#{clientEditMbean.client.adresse}" styleClass="form-control"/>
+
+            <h:outputLabel for="telephone" value="Téléphone" styleClass="text-light font-weight-bold"></h:outputLabel>
+            <h:inputText id="telephone" value="#{clientEditMbean.client.telephone}" styleClass="form-control"/>
+
+            <h:outputLabel for="email" value="Email" styleClass="text-light font-weight-bold"></h:outputLabel>
+            <h:inputText id="email" value="#{clientEditMbean.client.email}" styleClass="form-control"/>
+
+            <h:outputLabel for="ville" value="Ville" styleClass="text-light font-weight-bold"></h:outputLabel>
+            <h:inputText id="ville" value="#{clientEditMbean.client.ville}" styleClass="form-control"/>
+
+            <h:outputLabel for="etat" value="État" styleClass="text-light font-weight-bold"></h:outputLabel>
+            <h:inputText id="etat" value="#{clientEditMbean.client.etat}" styleClass="form-control"/>
+
+            <h:outputLabel for="codeZip" value="Code ZIP" styleClass="text-light font-weight-bold"></h:outputLabel>
+            <h:inputText id="codeZip" value="#{clientEditMbean.client.codeZip}" styleClass="form-control"/>
+            </h:panelGrid>
+            <div style="text-align: center; margin-top: 20px"> <!-- Pour aligner horizontalement -->
+                <h:commandButton  styleClass="buttons-dialog buttons-dialog2" style="background-color: red ; " value="Annuler" type="button" onclick="PF('editDialog').hide()" />
+                <h:commandButton styleClass="buttons-dialog buttons-dialog1" style="margin-left: 15px; background-color:  #28a745;" value="Enregistrer" action="#{clientEditMbean.edit()}" oncomplete="PF('editDialog').hide()" />
+            </div>
+        </h:form>
+    </p:dialog>
 </h:body>
 </html>

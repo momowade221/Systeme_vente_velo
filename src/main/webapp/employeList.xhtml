@@ -10,6 +10,23 @@
 
 <h:head>
     <title>Liste des Employés</title>
+    <style type="text/css">
+
+        .buttons-dialog {
+            border: none; /* Supprimez la bordure */
+            padding: 10px 20px; /* Espacement du texte à l'intérieur du bouton */
+            cursor: pointer; /* Curseur de la main au survol */
+            color: #ffffff;
+        }
+        .buttons-dialog1:hover {
+            background-color: #218838; /* Darker green on hover */
+            /* Add any other hover styles you want */
+        }
+        .buttons-dialog2:hover {
+            background-color: #ff0000; /* Darker green on hover */
+            /* Add any other hover styles you want */
+        }
+    </style>
 </h:head>
 
 
@@ -47,6 +64,17 @@
                 <p:column headerText="Manager ID">
                     <h:outputText value="#{employe.managerId}"/>
                 </p:column>
+                <!-- Modification et Suppression -->
+
+                <p:column headerText="Modification">
+                    <p:commandButton value="Modifier" oncomplete="PF('editDialog').show()" update=":editForm">
+                        <f:setPropertyActionListener target="#{employeEditMbean.employe}" value="#{employe}" />
+                    </p:commandButton>
+                </p:column>
+
+                <p:column headerText="Suppression">
+                    <p:commandButton value="Supprimer" action="#{employeDeleteMbean.delete(employe)}"/>
+                </p:column>
             </p:dataTable>
             <p:panelGrid id="detailEmploye" columns="1">
                 <p:panel rendered="#{listeEmployesMbean.selected_employe != null}">
@@ -63,5 +91,41 @@
             </p:panelGrid>
         </h:panelGrid>
     </h:form>
+
+    <!-- Boîte de dialogue de modification -->
+    <p:dialog header="Modifier les informations de l'employé" widgetVar="editDialog" resizable="false" modal="true" dynamic="true">
+        <h:form id="editForm">
+            <h:panelGrid columns="2" cellpadding="10">
+            <h:outputLabel for="prenom" value="Prénom" styleClass="text-light font-weight-bold"></h:outputLabel>
+            <h:inputText id="prenom" value="#{employeEditMbean.employe.prenom}" styleClass="form-control"/>
+
+            <h:outputLabel for="nom" value="Nom" styleClass="text-light font-weight-bold"></h:outputLabel>
+            <h:inputText id="nom" value="#{employeEditMbean.employe.nom}" styleClass="form-control"/>
+
+            <h:outputLabel for="email" value="Email" styleClass="text-light font-weight-bold"></h:outputLabel>
+            <h:inputText id="email" value="#{employeEditMbean.employe.email}" styleClass="form-control"/>
+
+            <h:outputLabel for="telephone" value="Téléphone" styleClass="text-light font-weight-bold"></h:outputLabel>
+            <h:inputText id="telephone" value="#{employeEditMbean.employe.telephone}" styleClass="form-control"/>
+
+            <h:outputLabel for="actif" value="Actif" styleClass="text-light font-weight-bold"></h:outputLabel>
+            <h:inputText id="actif" value="#{employeEditMbean.employe.actif}" styleClass="form-control"/>
+
+            <h:outputLabel for="magasinId" value="Magasin ID" styleClass="text-light font-weight-bold"></h:outputLabel>
+            <h:inputText id="magasinId" value="#{employeEditMbean.employe.magasinId}" styleClass="form-control"/>
+
+            <h:outputLabel for="managerId" value="Manager ID" styleClass="text-light font-weight-bold"></h:outputLabel>
+            <h:inputText id="managerId" value="#{employeEditMbean.employe.managerId}" styleClass="form-control"/>
+            </h:panelGrid>
+
+            <!-- Autres champs à modifier ici... -->
+
+            <div style="text-align: center; margin-top: 20px"> <!-- Pour aligner horizontalement -->
+                <h:commandButton  styleClass="buttons-dialog buttons-dialog2" style="background-color: red ; " value="Annuler" type="button" onclick="PF('editDialog').hide()" />
+                <h:commandButton styleClass="buttons-dialog buttons-dialog1" style="margin-left: 15px; background-color:  #28a745;" value="Enregistrer" action="#{employeEditMbean.edit()}" oncomplete="PF('editDialog').hide()" />
+            </div>
+
+        </h:form>
+    </p:dialog>
 </h:body>
 </html>
