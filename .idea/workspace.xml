@@ -10,46 +10,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e785b8dc-61f8-462e-902e-6e4b4abacfa5" name="Changes" comment="Suppression">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ept/git/dic2/systeme_vente_velo/controller/ArticleCommandeDelete.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ept/git/dic2/systeme_vente_velo/controller/ArticleCommandeEdit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ept/git/dic2/systeme_vente_velo/controller/CategorieDelete.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ept/git/dic2/systeme_vente_velo/controller/CategorieEdit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ept/git/dic2/systeme_vente_velo/controller/ClientDelete.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ept/git/dic2/systeme_vente_velo/controller/ClientEdit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ept/git/dic2/systeme_vente_velo/controller/CommandeDelete.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ept/git/dic2/systeme_vente_velo/controller/CommandeEdit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ept/git/dic2/systeme_vente_velo/controller/EleveDelete.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ept/git/dic2/systeme_vente_velo/controller/EmployeDelete.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ept/git/dic2/systeme_vente_velo/controller/EmployeEdit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ept/git/dic2/systeme_vente_velo/controller/MagasinDelete.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ept/git/dic2/systeme_vente_velo/controller/MagasinEdit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ept/git/dic2/systeme_vente_velo/controller/MarqueDelete.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ept/git/dic2/systeme_vente_velo/controller/MarqueEdit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ept/git/dic2/systeme_vente_velo/controller/ProduitDelete.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ept/git/dic2/systeme_vente_velo/controller/ProduitEdit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ept/git/dic2/systeme_vente_velo/controller/StockDelete.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ept/git/dic2/systeme_vente_velo/controller/StockEdit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ChatGPTCopilotChannelManager.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ChatGPTCopilotChannelManager.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ept/git/dic2/systeme_vente_velo/beans/StartupShutdownBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ept/git/dic2/systeme_vente_velo/beans/StartupShutdownBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ept/git/dic2/systeme_vente_velo/beans/StockAlertBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ept/git/dic2/systeme_vente_velo/beans/StockAlertBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/articleCommandeList.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/articleCommandeList.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/categorieList.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/categorieList.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/clientList.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/clientList.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/commandeList.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/commandeList.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/eleveList.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/eleveList.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/employeList.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/employeList.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/magasinList.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/magasinList.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/marqueList.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/marqueList.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/produitList.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/produitList.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/stockList.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/stockList.xhtml" afterDir="false" />
-    </list>
+    <list default="true" id="e785b8dc-61f8-462e-902e-6e4b4abacfa5" name="Changes" comment="Suppression" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -114,7 +75,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Merging main",
+    "git-widget-placeholder": "master",
     "last_opened_file_path": "E:/00MY WORKSPACE/07DEVELOPPEMENT/J2EE/Systeme_vente_velo",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
