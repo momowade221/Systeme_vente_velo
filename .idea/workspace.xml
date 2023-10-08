@@ -10,10 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e785b8dc-61f8-462e-902e-6e4b4abacfa5" name="Changes" comment="Suppression">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ept/git/dic2/systeme_vente_velo/beans/StartupShutdownBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ept/git/dic2/systeme_vente_velo/beans/StartupShutdownBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ept/git/dic2/systeme_vente_velo/beans/StockAlertBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ept/git/dic2/systeme_vente_velo/beans/StockAlertBean.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -295,7 +292,7 @@
       <workItem from="1694427426016" duration="60000" />
       <workItem from="1694427498542" duration="763000" />
       <workItem from="1694429144895" duration="562000" />
-      <workItem from="1696770125658" duration="2569000" />
+      <workItem from="1696770125658" duration="3722000" />
     </task>
     <task id="LOCAL-00001" summary="JSF lI">
       <created>1688818273571</created>
