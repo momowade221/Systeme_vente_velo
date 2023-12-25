@@ -18,4 +18,4 @@ Notre application offre une interface conviviale et intuitive qui vous permet de
 Notre application de gestion de vente de vélos est conçue pour vous aider à optimiser vos opérations commerciales, à améliorer votre productivité et à offrir une meilleure expérience à vos clients. Que vous soyez un petit magasin de vélos ou une entreprise en pleine expansion, notre solution peut s'adapter à vos besoins spécifiques.
 
 
-Voici le lien du rapport: 
+Voici le lien du rapport: https://drive.google.com/file/d/1EGBmiwJb9JAHiKcXMK4m7E-Vy18GufFI/view?usp=sharing

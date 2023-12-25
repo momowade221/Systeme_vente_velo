@@ -1,6 +1,4 @@
 package ept.git.dic2.systeme_vente_velo.service;
-
-
 import ept.git.dic2.systeme_vente_velo.beans.CommandeBean;
 import ept.git.dic2.systeme_vente_velo.model.Commande;
 import io.swagger.v3.oas.annotations.Operation;
@@ -14,7 +12,6 @@ import jakarta.ws.rs.core.Response;
 
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
-
 @Path("commandes")
 public class CommandeRessource {
     @EJB
